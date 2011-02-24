@@ -1,0 +1,12 @@
+<div id='subtitle'>
+	blah.
+</div>
+<input type='hidden' name='appid' value='partyshout' />
+<input type='hidden' name='output' value='json' />
+
+<textarea name='context' style='display:none' >
+	<% for post in @posts %>
+		<%= post.body %>
+	<% end %>
+</textarea>
+<%= submit_tag %>

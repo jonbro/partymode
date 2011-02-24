@@ -1,0 +1,22 @@
+<div id='party_shout'>
+<div id='posts'>
+	<div class='post'>
+	<div class='post_header'><span class='date'>
+		<% if @post.id == session[:post_edit] %>
+		(<%= link_to "edit", {:action => 'edit' } %>) 
+		<% end %>
+		posted <%= time_ago_in_words(@post.created_on) %> ago
+		<%= link_to "#", :controller => 'posts', :action => 'show', :id => @post.id %>
+		</span>
+		<% if @post.author == "" %>
+		anon
+		<% else %>
+		<%= @post.author %>
+		<% end %>
+	</div>
+	<p>
+		<%= auto_link(simple_format(@post.body)) %>
+	</p>
+</div>
+</div>
+</div>

@@ -1,0 +1,18 @@
+<ul id='main_menu'>
+	<li><a href='../../wiki/show/page/about/'>about</a></li>
+	<li><a href='#'>search</a></li>
+	<li><%= link_to "rss", :controller => "posts", :action => "rss" %></li>
+</ul>
+
+<div id='party_shout'>
+
+<h1><%= link_to "party shout", :controller => 'posts', :action => 'list' %>
+	<% if @title %>
+		: <span style='color:#888'><%= @title %></span>
+	<% end %>
+</h1>
+<%= render :partial => 'party_file' %>
+
+
+<div id='posts'>
+</div>

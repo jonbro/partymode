@@ -1,0 +1,28 @@
+<div id='sub_header'>
+  <%= render :partial => 'page_navigation' %>
+</div>
+<div id='posts'>
+  <%= render :partial => "post", :collection => @posts %>
+  <%= render :partial => 'page_navigation' %>
+
+  <div class='post' style="margin-top:5px">
+  	<div class='post_body'>
+  		<% if @user %>
+  			<%= form_tag :action => 'create' %>
+  			<!--[form:post]-->
+  				<%= render :partial => 'form' %>
+  				<%= submit_tag "Speak Yo' Mind." %>
+  			</form>
+  		<% else %>
+  		<p>you must login to post</p>
+  		<% end %>
+  	</div>
+  
+    <div class='post_header'>
+  		<span class='date'>
+  		other pages <%= will_paginate @posts %>
+  		</span>
+    </div>
+
+  </div>
+</div>

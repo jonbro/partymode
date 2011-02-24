@@ -1,0 +1,19 @@
+<div class='post'>
+	<div class='post_body'>
+		<%= simple_format(auto_link(post.body)) %>
+	</div>
+	<div class='post_header'>
+		<% if post.user %>
+			<%= post.user.name %>
+		<% else %>
+			<%= post.author %>
+		<% end %>
+		<span class='date'>
+			<% if @user; if post.user and post.user.id == @user.id %>
+			(<%= link_to "edit", {:action => 'edit', :id => post.id } %>) 
+			<% end; end %>
+			posted <%= time_ago_in_words post.created_on %> ago
+		</span>
+		</div>
+	</div>
+</div>

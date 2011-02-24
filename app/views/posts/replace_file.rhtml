@@ -1,0 +1,12 @@
+<h3>Upload file</h3>
+
+<form action="replace_file" method="post" enctype="multipart/form-data">
+  <p>
+    <b>file no.<%= @params[:id] %></b><br />
+    <input type="file" name="party[file]" />
+    <input type="hidden" name="party[id]" value="<%= @params[:id] %>"/>
+
+  </p>
+  <p><input value='Upload file' type="submit" name="Save" /></p>
+</form>
+<p>There are no file upload limits, however, if you try to upload a file large than 10mb, you will probably have problems.</p>

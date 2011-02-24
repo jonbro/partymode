@@ -1,0 +1,10 @@
+<h3>Upload file</h3>
+<form action="newFile" method="post" enctype="multipart/form-data">
+  <p>
+    <input type="file" name="file" onclick='document.getElementById("type").value = "file"'/>
+  </p>
+<p>There are no file upload limits, however, if you try to upload a file large than 10mb, you will probably have problems.</p>
+  <p><input value='GO!' type="submit" name="Save" /></p>
+	<input type='hidden' name='type' id='type'/>
+	<input type='hidden' name='position' value='<%= @params[:id] %>'>
+</form>

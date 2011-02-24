@@ -1,0 +1,25 @@
+<div class='post'>
+	<div class='post_body'>
+		<%= simple_format(auto_link(post.body)) %>
+	</div>
+	<div class='post_header'>
+		<% if post.user %>
+			<%= post.user.name %>
+		<% else %>
+			<%= post.author %>
+		<% end %>
+		<span class='date'>
+			<% if @user; if post.user and post.user.id == @user.id %>
+			(<%= link_to "edit", {:action => 'edit', :id => post.id } %>) 
+			<% end; end %>
+			posted <%= time_ago_in_words post.created_on %> ago<br><br>
+		</span>
+		<span class='reply_link'>
+		  <%= link_to (post.replies.size == 0)? "reply" : "replies (#{post.replies.size})", {:controller => "replies", :action => 'list', :id => post.id } %><br>
+		  <% if (post.replies.size > 0) %>
+		    most recent by <b><%= post.replies.last.user.name %></b> <%= time_ago_in_words post.replies.last.created_on %> ago
+		  <% end %>
+		</span>
+		</div>
+	</div>
+</div>

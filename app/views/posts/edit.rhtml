@@ -1,0 +1,8 @@
+<h1>Editing post</h1>
+<br style='clear:both;' />
+<%= form_tag :action => 'update', :id => @post %>
+  <%= render :partial => 'form' %>
+  <%= submit_tag 'Edit' %>
+</form>
+
+<%= link_to 'Back', :action => 'list' %>

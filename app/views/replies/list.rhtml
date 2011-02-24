@@ -1,0 +1,20 @@
+<div id='posts'>
+
+  <%= render :partial => 'post' %>
+  
+  <%= render :partial => "post", :collection => @post.replies %>
+  
+  <div class='post'>
+  	<div class='post_body'>
+  		<% if @user %>
+  			<%= form_tag :action => 'create', :id => @post.id %>
+  			<!--[form:post]-->
+  				<%= render :partial => 'form' %>
+  				<%= submit_tag "Speak Yo' Mind." %>
+			</form>
+  		<% else %>
+  		<p>you must login to post</p>
+  		<% end %>
+  	</div>
+  </div>
+</div>
