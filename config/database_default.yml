@@ -1,8 +1,0 @@
-# SQLite version 3.x
-#   gem install sqlite3-ruby (not necessary on OS X Leopard)
-development:
-  adapter: mysql
-  database: partymode
-  socket: /Applications/MAMP/tmp/mysql/mysql.sock
-  username: root
-  password: root

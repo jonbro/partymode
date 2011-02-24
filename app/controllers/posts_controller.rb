@@ -164,7 +164,7 @@ class PostsController < ApplicationController
   end
   
   def ajax_call
-    render (:partial => "ajax_jamz")
+    render :partial => "ajax_jamz"
   end
   
   private

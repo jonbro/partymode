@@ -2,7 +2,7 @@
 
   <%= render :partial => 'post' %>
   
-  <%= render :partial => "post", :collection => @post.replies %>
+  <%= render :partial => "post", :collection => @post.replies, :as => :post %>
   
   <div class='post'>
   	<div class='post_body'>
