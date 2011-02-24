@@ -686,3 +686,554 @@ ActionView::Template::Error (undefined method `body' for nil:NilClass):
 Rendered /Users/jonbro2/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
 Rendered /Users/jonbro2/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.2ms)
 Rendered /Users/jonbro2/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Feb 24 16:00:32 -0500 2011
+
+ActionController::RoutingError (No route matches "/"):
+  
+
+Rendered /Users/jonbro2/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Thu Feb 24 16:00:38 -0500 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPartyFile Load (1.0ms)[0m  [1mSELECT `party_files`.* FROM `party_files` WHERE (position = 0) ORDER BY created_on DESC LIMIT 1[0m
+  [1m[35mPartyFile Load (0.9ms)[0m  SELECT `party_files`.* FROM `party_files` WHERE (position = 1) ORDER BY created_on DESC LIMIT 1
+  [1m[36mPartyFile Load (0.8ms)[0m  [1mSELECT `party_files`.* FROM `party_files` WHERE (position = 2) ORDER BY created_on DESC LIMIT 1[0m
+  [1m[35mPartyFile Load (0.8ms)[0m  SELECT `party_files`.* FROM `party_files` WHERE (position = 3) ORDER BY created_on DESC LIMIT 1
+  [1m[36mPartyFile Load (0.8ms)[0m  [1mSELECT `party_files`.* FROM `party_files` WHERE (position = 4) ORDER BY created_on DESC LIMIT 1[0m
+  [1m[35mPost Load (4.5ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY created_on DESC LIMIT 10 OFFSET 0
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM `posts`[0m
+Rendered posts/_page_navigation.rhtml (0.8ms)
+  [1m[35mSQL (30.6ms)[0m  SHOW TABLES
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mSQL (3.4ms)[0m  SELECT COUNT(*) FROM `replies` WHERE (`replies`.post_id = 6480)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `replies` WHERE (`replies`.post_id = 6480)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `replies` WHERE (`replies`.post_id = 6480)
+  [1m[36mReply Load (0.2ms)[0m  [1mSELECT `replies`.* FROM `replies` WHERE (`replies`.post_id = 6480) ORDER BY replies.id DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `replies`.* FROM `replies` WHERE (`replies`.post_id = 6480) ORDER BY replies.id DESC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1
+  [1m[36mSQL (3.5ms)[0m  [1mSELECT COUNT(*) FROM `replies` WHERE (`replies`.post_id = 6479)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `replies` WHERE (`replies`.post_id = 6479)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `replies` WHERE (`replies`.post_id = 6479)[0m
+  [1m[35mReply Load (0.3ms)[0m  SELECT `replies`.* FROM `replies` WHERE (`replies`.post_id = 6479) ORDER BY replies.id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `replies`.* FROM `replies` WHERE (`replies`.post_id = 6479) ORDER BY replies.id DESC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 187 LIMIT 1[0m
+  [1m[35mSQL (3.3ms)[0m  SELECT COUNT(*) FROM `replies` WHERE (`replies`.post_id = 6478)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `replies` WHERE (`replies`.post_id = 6478)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `replies` WHERE (`replies`.post_id = 6478)
+  [1m[36mReply Load (0.2ms)[0m  [1mSELECT `replies`.* FROM `replies` WHERE (`replies`.post_id = 6478) ORDER BY replies.id DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `replies`.* FROM `replies` WHERE (`replies`.post_id = 6478) ORDER BY replies.id DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 7 LIMIT 1
+  [1m[36mSQL (3.3ms)[0m  [1mSELECT COUNT(*) FROM `replies` WHERE (`replies`.post_id = 6477)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `replies` WHERE (`replies`.post_id = 6477)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `replies` WHERE (`replies`.post_id = 6477)[0m
+  [1m[35mReply Load (0.3ms)[0m  SELECT `replies`.* FROM `replies` WHERE (`replies`.post_id = 6477) ORDER BY replies.id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 187 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `replies`.* FROM `replies` WHERE (`replies`.post_id = 6477) ORDER BY replies.id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[35mSQL (3.3ms)[0m  SELECT COUNT(*) FROM `replies` WHERE (`replies`.post_id = 6476)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `replies` WHERE (`replies`.post_id = 6476)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `replies` WHERE (`replies`.post_id = 6476)
+  [1m[36mReply Load (0.2ms)[0m  [1mSELECT `replies`.* FROM `replies` WHERE (`replies`.post_id = 6476) ORDER BY replies.id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `replies`.* FROM `replies` WHERE (`replies`.post_id = 6476) ORDER BY replies.id DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2329 LIMIT 1
+  [1m[36mSQL (3.3ms)[0m  [1mSELECT COUNT(*) FROM `replies` WHERE (`replies`.post_id = 6475)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `replies` WHERE (`replies`.post_id = 6475)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `replies` WHERE (`replies`.post_id = 6475)[0m
+  [1m[35mReply Load (0.3ms)[0m  SELECT `replies`.* FROM `replies` WHERE (`replies`.post_id = 6475) ORDER BY replies.id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `replies`.* FROM `replies` WHERE (`replies`.post_id = 6475) ORDER BY replies.id DESC LIMIT 1
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  [1m[35mSQL (4.0ms)[0m  SELECT COUNT(*) FROM `replies` WHERE (`replies`.post_id = 6474)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `replies` WHERE (`replies`.post_id = 6474)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `replies` WHERE (`replies`.post_id = 6474)
+  [1m[36mReply Load (0.3ms)[0m  [1mSELECT `replies`.* FROM `replies` WHERE (`replies`.post_id = 6474) ORDER BY replies.id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `replies`.* FROM `replies` WHERE (`replies`.post_id = 6474) ORDER BY replies.id DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 538 LIMIT 1
+  [1m[36mSQL (3.4ms)[0m  [1mSELECT COUNT(*) FROM `replies` WHERE (`replies`.post_id = 6473)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `replies` WHERE (`replies`.post_id = 6473)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `replies` WHERE (`replies`.post_id = 6473)[0m
+  [1m[35mReply Load (0.4ms)[0m  SELECT `replies`.* FROM `replies` WHERE (`replies`.post_id = 6473) ORDER BY replies.id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `replies`.* FROM `replies` WHERE (`replies`.post_id = 6473) ORDER BY replies.id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[35mSQL (3.3ms)[0m  SELECT COUNT(*) FROM `replies` WHERE (`replies`.post_id = 6472)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `replies` WHERE (`replies`.post_id = 6472)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `replies` WHERE (`replies`.post_id = 6472)
+  [1m[36mReply Load (0.4ms)[0m  [1mSELECT `replies`.* FROM `replies` WHERE (`replies`.post_id = 6472) ORDER BY replies.id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `replies`.* FROM `replies` WHERE (`replies`.post_id = 6472) ORDER BY replies.id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1
+  [1m[36mSQL (3.3ms)[0m  [1mSELECT COUNT(*) FROM `replies` WHERE (`replies`.post_id = 6471)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `replies` WHERE (`replies`.post_id = 6471)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `replies` WHERE (`replies`.post_id = 6471)[0m
+  [1m[35mReply Load (0.3ms)[0m  SELECT `replies`.* FROM `replies` WHERE (`replies`.post_id = 6471) ORDER BY replies.id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `replies`.* FROM `replies` WHERE (`replies`.post_id = 6471) ORDER BY replies.id DESC LIMIT 1
+Rendered posts/_post.rhtml (277.7ms)
+Rendered posts/_page_navigation.rhtml (0.7ms)
+Rendered posts/_sign_up.rhtml (0.6ms)
+Rendered posts/_login.rhtml (0.5ms)
+Rendered posts/_party_file.rhtml (0.2ms)
+Rendered posts/list.html.erb within layouts/posts (295.6ms)
+Completed 200 OK in 343ms (Views: 238.0ms | ActiveRecord: 79.6ms)
+
+
+Started GET "/stylesheets/scaffold.css" for 127.0.0.1 at Thu Feb 24 16:00:38 -0500 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css"):
+  
+
+Rendered /Users/jonbro2/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/%3Ca%20href=" for 127.0.0.1 at Thu Feb 24 16:00:38 -0500 2011
+
+ActionController::RoutingError (No route matches "/%3Ca%20href="):
+  
+
+Rendered /Users/jonbro2/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/replies/list/6480" for 127.0.0.1 at Thu Feb 24 16:00:41 -0500 2011
+  Processing by RepliesController#list as HTML
+  Parameters: {"id"=>"6480"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 6480 LIMIT 1[0m
+Rendered replies/_post.rhtml (14.8ms)
+Rendered replies/list.html.erb within layouts/replies (16.8ms)
+Completed   in 29ms
+
+ActionView::Template::Error (undefined method `body' for nil:NilClass):
+    1: <div class='post'>
+    2: 	<div class='post_body'>
+    3: 		<%= simple_format(auto_link(post.body)) %>
+    4: 	</div>
+    5: 	<div class='post_header'>
+    6: 		<% if post.user %>
+  app/views/replies/_post.rhtml:3:in `_app_views_replies__post_rhtml___2031307311_2174086860_732510'
+  app/views/replies/list.html.erb:3:in `_app_views_replies_list_html_erb___220813474_2174116780_0'
+
+Rendered /Users/jonbro2/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/jonbro2/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.3ms)
+Rendered /Users/jonbro2/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.2ms)
+
+
+Started GET "/replies/list/6480" for 127.0.0.1 at Thu Feb 24 16:00:47 -0500 2011
+  Processing by RepliesController#list as HTML
+  Parameters: {"id"=>"6480"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 6480 LIMIT 1
+  [1m[36mReply Load (18.0ms)[0m  [1mSELECT `replies`.* FROM `replies` WHERE (`replies`.post_id = 6480)[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 35 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 187 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+Rendered replies/_post.rhtml (31.9ms)
+Rendered posts/_sign_up.rhtml (0.5ms)
+Rendered posts/_login.rhtml (0.5ms)
+Rendered posts/_party_file.rhtml (0.2ms)
+Rendered replies/list.html.erb within layouts/replies (71.9ms)
+Completed 200 OK in 83ms (Views: 56.5ms | ActiveRecord: 18.9ms)
+
+
+Started GET "/stylesheets/scaffold.css" for 127.0.0.1 at Thu Feb 24 16:00:47 -0500 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css"):
+  
+
+Rendered /Users/jonbro2/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/replies/list/6480" for 127.0.0.1 at Thu Feb 24 16:01:13 -0500 2011
+  Processing by RepliesController#list as HTML
+  Parameters: {"id"=>"6480"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 6480 LIMIT 1
+Rendered replies/_post.rhtml (0.7ms)
+Rendered replies/list.html.erb within layouts/replies (2.3ms)
+Completed   in 14ms
+
+ActionView::Template::Error (undefined method `body' for nil:NilClass):
+    1: <div class='post'>
+    2: 	<div class='post_body'>
+    3: 		<%= simple_format(auto_link(post.body)) %>
+    4: 	</div>
+    5: 	<div class='post_header'>
+    6: 		<% if post.user %>
+  app/views/replies/_post.rhtml:3:in `_app_views_replies__post_rhtml___2031307311_2173592700_732510'
+  app/views/replies/list.html.erb:3:in `_app_views_replies_list_html_erb___220813474_2173619940_0'
+
+Rendered /Users/jonbro2/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/jonbro2/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.1ms)
+Rendered /Users/jonbro2/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.4ms)
+
+
+Started GET "/replies/list/6480" for 127.0.0.1 at Thu Feb 24 16:01:19 -0500 2011
+  Processing by RepliesController#list as HTML
+  Parameters: {"id"=>"6480"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 6480 LIMIT 1[0m
+  [1m[35mReply Load (18.8ms)[0m  SELECT `replies`.* FROM `replies` WHERE (`replies`.post_id = 6480)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 35 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 187 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1
+Rendered replies/_post.rhtml (31.6ms)
+Rendered posts/_sign_up.rhtml (0.5ms)
+Rendered posts/_login.rhtml (0.5ms)
+Rendered posts/_party_file.rhtml (0.2ms)
+Rendered replies/list.html.erb within layouts/replies (90.6ms)
+Completed 200 OK in 102ms (Views: 74.3ms | ActiveRecord: 19.8ms)
+
+
+Started GET "/stylesheets/scaffold.css" for 127.0.0.1 at Thu Feb 24 16:01:20 -0500 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css"):
+  
+
+Rendered /Users/jonbro2/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/replies/list/6480" for 127.0.0.1 at Thu Feb 24 16:01:21 -0500 2011
+  Processing by RepliesController#list as HTML
+  Parameters: {"id"=>"6480"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 6480 LIMIT 1[0m
+  [1m[35mReply Load (17.9ms)[0m  SELECT `replies`.* FROM `replies` WHERE (`replies`.post_id = 6480)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 35 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 187 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1
+Rendered replies/_post.rhtml (34.5ms)
+Rendered posts/_sign_up.rhtml (0.9ms)
+Rendered posts/_login.rhtml (0.6ms)
+Rendered posts/_party_file.rhtml (0.2ms)
+Rendered replies/list.html.erb within layouts/replies (74.8ms)
+Completed 200 OK in 88ms (Views: 59.4ms | ActiveRecord: 19.0ms)
+
+
+Started GET "/stylesheets/scaffold.css" for 127.0.0.1 at Thu Feb 24 16:01:21 -0500 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css"):
+  
+
+Rendered /Users/jonbro2/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/%3Ca%20href=" for 127.0.0.1 at Thu Feb 24 16:01:22 -0500 2011
+
+ActionController::RoutingError (No route matches "/%3Ca%20href="):
+  
+
+Rendered /Users/jonbro2/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/replies/list/6480" for 127.0.0.1 at Thu Feb 24 16:01:24 -0500 2011
+  Processing by RepliesController#list as HTML
+  Parameters: {"id"=>"6480"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 6480 LIMIT 1[0m
+  [1m[35mReply Load (19.1ms)[0m  SELECT `replies`.* FROM `replies` WHERE (`replies`.post_id = 6480)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 35 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 187 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1
+Rendered replies/_post.rhtml (32.0ms)
+Rendered posts/_sign_up.rhtml (0.5ms)
+Rendered posts/_login.rhtml (0.5ms)
+Rendered posts/_party_file.rhtml (0.2ms)
+Rendered replies/list.html.erb within layouts/replies (72.7ms)
+Completed 200 OK in 84ms (Views: 56.0ms | ActiveRecord: 20.1ms)
+
+
+Started GET "/replies/list/6480" for 127.0.0.1 at Thu Feb 24 16:01:41 -0500 2011
+  Processing by RepliesController#list as HTML
+  Parameters: {"id"=>"6480"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 6480 LIMIT 1[0m
+  [1m[35mReply Load (19.5ms)[0m  SELECT `replies`.* FROM `replies` WHERE (`replies`.post_id = 6480)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 35 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 187 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1
+Rendered replies/_post.html.erb (36.4ms)
+Rendered posts/_sign_up.rhtml (0.6ms)
+Rendered posts/_login.rhtml (0.5ms)
+Rendered posts/_party_file.rhtml (0.2ms)
+Rendered replies/list.html.erb within layouts/replies (135.8ms)
+Completed 200 OK in 148ms (Views: 118.8ms | ActiveRecord: 21.0ms)
+
+
+Started GET "/stylesheets/scaffold.css" for 127.0.0.1 at Thu Feb 24 16:01:41 -0500 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css"):
+  
+
+Rendered /Users/jonbro2/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/replies/list/6480" for 127.0.0.1 at Thu Feb 24 16:01:42 -0500 2011
+  Processing by RepliesController#list as HTML
+  Parameters: {"id"=>"6480"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 6480 LIMIT 1[0m
+  [1m[35mReply Load (17.8ms)[0m  SELECT `replies`.* FROM `replies` WHERE (`replies`.post_id = 6480)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 35 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 187 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1
+Rendered replies/_post.html.erb (84.6ms)
+Rendered posts/_sign_up.rhtml (0.5ms)
+Rendered posts/_login.rhtml (0.5ms)
+Rendered posts/_party_file.rhtml (0.2ms)
+Rendered replies/list.html.erb within layouts/replies (123.3ms)
+Completed 200 OK in 136ms (Views: 108.5ms | ActiveRecord: 18.8ms)
+
+
+Started GET "/stylesheets/scaffold.css" for 127.0.0.1 at Thu Feb 24 16:01:42 -0500 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css"):
+  
+
+Rendered /Users/jonbro2/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/replies/list/6480" for 127.0.0.1 at Thu Feb 24 16:02:01 -0500 2011
+  Processing by RepliesController#list as HTML
+  Parameters: {"id"=>"6480"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 6480 LIMIT 1[0m
+  [1m[35mReply Load (17.7ms)[0m  SELECT `replies`.* FROM `replies` WHERE (`replies`.post_id = 6480)
+Rendered replies/_post.html.erb (0.4ms)
+Rendered posts/_sign_up.rhtml (0.5ms)
+Rendered posts/_login.rhtml (0.9ms)
+Rendered posts/_party_file.rhtml (0.2ms)
+Rendered replies/list.html.erb within layouts/replies (39.8ms)
+Completed 200 OK in 51ms (Views: 25.5ms | ActiveRecord: 17.9ms)
+
+
+Started GET "/stylesheets/scaffold.css" for 127.0.0.1 at Thu Feb 24 16:02:01 -0500 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css"):
+  
+
+Rendered /Users/jonbro2/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/replies/list/6480" for 127.0.0.1 at Thu Feb 24 16:02:02 -0500 2011
+  Processing by RepliesController#list as HTML
+  Parameters: {"id"=>"6480"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 6480 LIMIT 1[0m
+  [1m[35mReply Load (17.5ms)[0m  SELECT `replies`.* FROM `replies` WHERE (`replies`.post_id = 6480)
+Rendered replies/_post.html.erb (0.5ms)
+Rendered posts/_sign_up.rhtml (0.5ms)
+Rendered posts/_login.rhtml (0.5ms)
+Rendered posts/_party_file.rhtml (0.2ms)
+Rendered replies/list.html.erb within layouts/replies (39.8ms)
+Completed 200 OK in 53ms (Views: 25.8ms | ActiveRecord: 17.7ms)
+
+
+Started GET "/stylesheets/scaffold.css" for 127.0.0.1 at Thu Feb 24 16:02:02 -0500 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css"):
+  
+
+Rendered /Users/jonbro2/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/replies/list/6480" for 127.0.0.1 at Thu Feb 24 16:02:24 -0500 2011
+  Processing by RepliesController#list as HTML
+  Parameters: {"id"=>"6480"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 6480 LIMIT 1[0m
+  [1m[35mReply Load (18.3ms)[0m  SELECT `replies`.* FROM `replies` WHERE (`replies`.post_id = 6480)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[35mUser Load (3.9ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 35 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 187 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1
+Rendered replies/_post.html.erb (60.9ms)
+Rendered posts/_sign_up.rhtml (0.5ms)
+Rendered posts/_login.rhtml (0.5ms)
+Rendered posts/_party_file.rhtml (0.2ms)
+Rendered replies/list.html.erb within layouts/replies (150.8ms)
+Completed 200 OK in 163ms (Views: 131.1ms | ActiveRecord: 23.3ms)
+
+
+Started GET "/stylesheets/scaffold.css" for 127.0.0.1 at Thu Feb 24 16:02:24 -0500 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css"):
+  
+
+Rendered /Users/jonbro2/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.4ms)
+
+
+Started GET "/replies/list/6480" for 127.0.0.1 at Thu Feb 24 16:02:38 -0500 2011
+  Processing by RepliesController#list as HTML
+  Parameters: {"id"=>"6480"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 6480 LIMIT 1[0m
+Rendered replies/_post.html.erb (0.6ms)
+Rendered replies/list.html.erb within layouts/replies (2.2ms)
+Completed   in 22ms
+
+ActionView::Template::Error (undefined method `body' for nil:NilClass):
+    1: <div class='post'>
+    2: 	<div class='post_body'>
+    3: 		<%= simple_format(auto_link(post.body)) %>
+    4: 	</div>
+    5: 	<div class='post_header'>
+    6: 		<% if post.user %>
+  app/views/replies/_post.html.erb:3:in `_app_views_replies__post_html_erb__792727269_2173912540_732510'
+  app/views/replies/list.html.erb:3:in `_app_views_replies_list_html_erb___220813474_2173931360_0'
+
+Rendered /Users/jonbro2/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/jonbro2/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.2ms)
+Rendered /Users/jonbro2/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.7ms)
+
+
+Started GET "/replies/list/6480" for 127.0.0.1 at Thu Feb 24 16:03:27 -0500 2011
+  Processing by RepliesController#list as HTML
+  Parameters: {"id"=>"6480"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 6480 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Rendered replies/_post.html.erb (21.2ms)
+  [1m[35mReply Load (17.8ms)[0m  SELECT `replies`.* FROM `replies` WHERE (`replies`.post_id = 6480)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 35 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 187 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1
+Rendered replies/_post.html.erb (19.5ms)
+Rendered posts/_sign_up.rhtml (0.6ms)
+Rendered posts/_login.rhtml (0.5ms)
+Rendered posts/_party_file.rhtml (0.2ms)
+Rendered replies/list.html.erb within layouts/replies (81.0ms)
+Completed 200 OK in 112ms (Views: 84.8ms | ActiveRecord: 19.0ms)
+
+
+Started GET "/stylesheets/scaffold.css" for 127.0.0.1 at Thu Feb 24 16:03:27 -0500 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css"):
+  
+
+Rendered /Users/jonbro2/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/replies/list/%3Ca%20href=" for 127.0.0.1 at Thu Feb 24 16:03:28 -0500 2011
+  Processing by RepliesController#list as 
+  Parameters: {"id"=>"<a href="}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 0 LIMIT 1[0m
+Completed   in 76ms
+
+ActiveRecord::RecordNotFound (Couldn't find Post with ID=<a href=):
+  app/controllers/replies_controller.rb:11:in `list'
+
+Rendered /Users/jonbro2/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/jonbro2/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.2ms)
+Rendered /Users/jonbro2/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.4ms)
+
+
+Started GET "/replies/list/%3Ca%20href=" for 127.0.0.1 at Thu Feb 24 16:03:28 -0500 2011
+  Processing by RepliesController#list as 
+  Parameters: {"id"=>"<a href="}
+  [1m[35mPost Load (0.6ms)[0m  SELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 0 LIMIT 1
+Completed   in 22ms
+
+ActiveRecord::RecordNotFound (Couldn't find Post with ID=<a href=):
+  app/controllers/replies_controller.rb:11:in `list'
+
+Rendered /Users/jonbro2/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/jonbro2/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+Rendered /Users/jonbro2/.rvm/gems/ruby-1.8.7-p299/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.4ms)

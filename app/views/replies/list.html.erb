@@ -1,6 +1,6 @@
 <div id='posts'>
 
-  <%= render :partial => 'post' %>
+  <%= render :partial => 'post', :object => @post %>
   
   <%= render :partial => "post", :collection => @post.replies, :as => :post %>
   
