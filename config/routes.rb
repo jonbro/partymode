@@ -64,4 +64,6 @@ Pmode::Application.routes.draw do
   # map.connect '', :controller => 'posts'
   # map.connect '/', :controller => 'posts'
   
+  root :to => 'posts#list'
+
 end
