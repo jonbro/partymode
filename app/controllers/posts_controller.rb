@@ -15,14 +15,14 @@ class PostsController < ApplicationController
   end
 
   def signup
-    # @user = User.new(params[:user])
-    # if @user.save
-    #   private_login
-    #   flash[:notice] = "Signup successful."
-    #   redirect_to :action => "list"
-    # else
-    #   flash[:notice] = "Something went wrong with your signup, please try again."
-    # end
+	@user = User.new(params[:user])
+	if @user.save
+	 private_login
+	 flash[:notice] = "Signup successful."
+	 redirect_to :action => "list"
+	else
+	 flash[:notice] = "Something went wrong with your signup, please try again."
+	end
   end
   
   def login
